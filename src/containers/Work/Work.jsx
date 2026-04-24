@@ -10,6 +10,11 @@ import track from "../../assets/track.png";
 import pak from "../../assets/pak.png";
 import poly from "../../assets/poly.png";
 import workout from "../../assets/workout.png";
+import quizzax from "../../assets/quizzax.png";
+import recSports from "../../assets/recSports.png";
+import essaly from "../../assets/essaly.png";
+import bazar from "../../assets/bazar.png";
+import hiitsPlus from "../../assets/hiitsPlus.png";
 
 
 const Work = () => {
@@ -49,7 +54,7 @@ const Work = () => {
         description: "Flutter application with Firebase integration",
         imgUrl: poly,
         projectLink: "NA",
-        codeLink: "https://github.com/Praveenterax/nodejs-shopping-site",
+        codeLink: "NA",
         tags: ["Flutter App"]
       },
       
@@ -58,10 +63,49 @@ const Work = () => {
         description: "Flutter application with Firebase integration",
         imgUrl: workout,
         projectLink: "https://play.google.com/store/apps/details?id=com.example.weather",
-        codeLink: "https://github.com/example/weather-app",
+        codeLink: "NA",
         tags: ["Flutter App"]
       },
-      
+      {
+        title: "Quizzax",
+        description: "Think Outside the Box — personalized quiz learning app",
+        imgUrl: quizzax,
+        projectLink: "https://play.google.com/store/apps/details?id=com.afn.test&hl=en",
+        codeLink: "NA",
+        tags: ["Flutter App"]
+      },
+      {
+        title: "Rec Sports",
+        description: "A Comprehensive Sports Tech Platform",
+        imgUrl: recSports,
+        projectLink: "https://play.google.com/store/apps/details?id=com.recsportskw.recsports&hl=en",
+        codeLink: "NA",
+        tags: ["Flutter App"]
+      },
+      {
+        title: "Essaly",
+        description: "Digital receipts & eco-friendly shopping assistant",
+        imgUrl: essaly,
+        projectLink: "https://play.google.com/store/apps/details?id=com.essalyapp&hl=en",
+        codeLink: "NA",
+        tags: ["Flutter App"]
+      },
+      {
+        title: "Bazar",
+        description: "Dreamy chalets, exclusive rewards, your perfect stay",
+        imgUrl: bazar,
+        projectLink: "https://play.google.com/store/apps/details?id=com.vga.bazzar&hl=en_US",
+        codeLink: "NA",
+        tags: ["Flutter App"]
+      },
+      {
+        title: "HiiTS+",
+        description: "HIIT Workout Timer — customize routines for all fitness levels",
+        imgUrl: hiitsPlus,
+        projectLink: "https://apps.apple.com/pk/app/hiits-plus/id1672426650",
+        codeLink: "NA",
+        tags: ["Flutter App"]
+      },
     ];
     setWorks(dummyWorks);
   }, []);
@@ -125,6 +169,7 @@ const Work = () => {
                     </motion.div>
                   </a>
                 )}
+                {work.codeLink.toLowerCase() !== "na" && (
                 <a
                   href={work.codeLink}
                   target="_blank"
@@ -141,6 +186,7 @@ const Work = () => {
                     <AiFillGithub />
                   </motion.div>
                 </a>
+                )}
               </motion.div>
             </div>
         

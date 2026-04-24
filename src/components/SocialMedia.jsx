@@ -8,7 +8,7 @@ const SocialMedia = () => {
     <div className="app__social">
       <div>
         <a
-          href="https://www.linkedin.com/in/raheel-ahmad9224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          href="https://www.linkedin.com/in/raheel-ahmad-dev/"
           target="_blank"
           rel="noreferrer"
           className="app__flex"

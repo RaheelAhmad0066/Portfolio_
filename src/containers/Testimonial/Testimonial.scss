@@ -4,6 +4,36 @@
   flex-direction: column;
 }
 
+/* Slide animations */
+@keyframes slideInLeft {
+  from { transform: translateX(80px); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+@keyframes slideInRight {
+  from { transform: translateX(-80px); opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+@keyframes slideOutLeft {
+  from { transform: translateX(0);    opacity: 1; }
+  to   { transform: translateX(-80px); opacity: 0; }
+}
+@keyframes slideOutRight {
+  from { transform: translateX(0);   opacity: 1; }
+  to   { transform: translateX(80px); opacity: 0; }
+}
+
+.testimonial-slide {
+  &.slide-in {
+    animation: slideInLeft 0.4s ease forwards;
+  }
+  &.slide-out-left {
+    animation: slideOutLeft 0.4s ease forwards;
+  }
+  &.slide-out-right {
+    animation: slideOutRight 0.4s ease forwards;
+  }
+}
+
 .app__testimonial-carousel {
   width: 60%;
   min-height: 320px;
