@@ -7,7 +7,7 @@ import "./Contact.scss";
 
 // ── Replace these 3 values with your EmailJS credentials ──────────────────────
 const EMAILJS_SERVICE_ID  = "service_rmnnaa5";
-const EMAILJS_TEMPLATE_ID = "template_p1ktwu4";
+const EMAILJS_TEMPLATE_ID = "template_ondoqut";
 const EMAILJS_PUBLIC_KEY  = "dE2V-RlhpLxx0YNBI";
 // ──────────────────────────────────────────────────────────────────────────────
 
